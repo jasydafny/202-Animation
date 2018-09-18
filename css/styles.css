@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+}
+
+.barrinhas {
+    margin-bottom: 120px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.loading{
+    font
+    transform: rotate(90deg);
+    margin-left: 40px;
+    font-size: 36pt;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 0, 149);
+    animation: 1s 2s linear infinite colorir, 1s 2s linear infinite girar;
+}
+
+.loading:nth-child(0){
+    background-color: red;
+    animation-delay: 0.2;
+}
+
+.loading:nth-child(1){
+    background-color: orangered;
+    animation-delay: 0.4s;
+}
+
+.loading:nth-child(2){
+    background-color: yellow;
+    animation-delay: 0.8s;
+}
+
+.loading:nth-child(3){
+    background-color: green;
+    animation-delay: 1.2s;
+    
+}
+
+.loading:nth-child(4){
+    background-color: rgb(90, 137, 236) ;
+    animation-delay: 1.6s;
+}
+
+.loading:nth-child(5){
+    background-color: blue;
+    animation-delay: 2s;
+}
+
+.loading:nth-child(6){
+    background-color: purple;
+    animation-delay: 2.4s;
+}
+
+.loading:nth-child(7){
+    background-color: violet;
+    animation-delay: 2.8s;
+}
+
+.goku :nth-child(0){
+    transition-delay: 0.20s;
+
+}
+
+@keyframes gokuzinho{
+    0%{
+        transform: rotate(300deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+@keyframes girar{
+    0%{
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    11%{
+        background-color: orangered;
+    }
+    21%{
+        background-color: yellow;
+    }
+    31%{
+        background-color: green;
+        transform: rotate(100deg);
+    }
+    41%{
+        background-color: rgb(0, 132, 255);
+    }
+    51%{
+        background-color: blue;
+    }
+    61%{
+        background-color: blue;
+    }
+     71%{
+         background-color: purple;
+     }
+     81%{
+         background-color: violet;
+         transform: rotate(360deg);
+     }
+}
+
+
+@keyframes colorir{
+    0%{
+        background-color: black;
+        transform: translateY(0deg);
+    }
+    25%{
+        background-color: aquamarine;
+        transform: translateY(100deg);
+    }
+    50%{
+        background-color: blueviolet;
+        transform: translateY(200deg);
+    }
+    75%{
+        background-color: violet;
+    }
+    100%{
+        background-color: rgb(52, 165, 42);
+        transform: translateY(300deg);
+     }
+}
+
+.dbz{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -85px;
+    left: 250px;
+    
+}
+
+.goku{
+    transform: rotate(90deg);
+    height: 100px;
+    width: 100px;
+    animation: 1s 2s linear infinite gokuzinho;
+}
